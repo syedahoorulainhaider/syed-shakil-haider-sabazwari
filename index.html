@@ -3,14 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Syed Shakil Haider Sabazwari</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
@@ -21,8 +23,9 @@ line-height:1.8;
 
 .hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
-url("father1.jpg");
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url('father1.jpg.png');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -32,37 +35,42 @@ text-align:center;
 padding:20px;
 }
 
+.hero-content{
+max-width:900px;
+}
+
 .hero h1{
 font-size:4rem;
 color:#fbbf24;
+margin-bottom:15px;
 }
 
 .hero p{
 font-size:1.4rem;
-margin-top:10px;
 }
 
 section{
-padding:80px 10%;
+padding:90px 10%;
 }
 
 .section-title{
 text-align:center;
-font-size:2.5rem;
+font-size:2.8rem;
 color:#fbbf24;
 margin-bottom:40px;
 }
 
 .card{
 background:#1e293b;
-padding:30px;
+padding:35px;
 border-radius:20px;
 margin-bottom:30px;
+box-shadow:0 0 20px rgba(0,0,0,.25);
 }
 
 .timeline{
 border-left:4px solid #fbbf24;
-padding-left:25px;
+padding-left:30px;
 }
 
 .timeline-item{
@@ -71,46 +79,66 @@ margin-bottom:35px;
 
 .timeline-item h3{
 color:#fbbf24;
+margin-bottom:10px;
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .gallery img{
 width:100%;
-border-radius:15px;
+height:420px;
+object-fit:cover;
+border-radius:20px;
+transition:.4s;
 }
 
-.message{
-background:linear-gradient(135deg,#fbbf24,#d97706);
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.quote{
+background:linear-gradient(135deg,#fbbf24,#f59e0b);
 color:black;
-padding:40px;
+padding:50px;
 border-radius:25px;
-font-size:1.1rem;
+font-size:1.15rem;
+font-weight:500;
 }
 
 footer{
 background:black;
-padding:30px;
+padding:35px;
 text-align:center;
 }
 
 @media(max-width:768px){
+
 .hero h1{
 font-size:2.5rem;
 }
+
+.section-title{
+font-size:2rem;
 }
+
+.gallery img{
+height:300px;
+}
+
+}
+
 </style>
 </head>
 <body>
 
 <div class="hero">
-<div>
+<div class="hero-content">
 <h1>Syed Shakil Haider Sabazwari</h1>
-<p>A Journey of Courage, Perseverance and Success</p>
+<p>A Story of Courage, Determination, and Love</p>
 </div>
 </div>
 
@@ -120,17 +148,10 @@ font-size:2.5rem;
 
 <div class="card">
 
-<p>
-
-Syed Shakil Haider Sabazwari was born on 30 September 1972 in Rawat Radio Colony.
-
-He spent his childhood and youth in Rawat and lived there until the age of approximately 22–23 years.
-
-He completed both his early and higher education in Rawat and later earned a Master's Degree in Political Science.
-
-Today he is known as a respected businessman associated with professional work related to the Islamabad High Court.
-
-</p>
+<p><strong>Born:</strong> 30 September 1972</p>
+<p><strong>Birthplace:</strong> Rawat Radio Colony, Pakistan</p>
+<p><strong>Education:</strong> Master's Degree in Political Science</p>
+<p><strong>Profession:</strong> Personal Business Associated with the Islamabad High Court</p>
 
 </div>
 
@@ -138,22 +159,31 @@ Today he is known as a respected businessman associated with professional work r
 
 <section>
 
-<h2 class="section-title">His Early Life</h2>
+<h2 class="section-title">Early Life</h2>
 
 <div class="card">
 
 <p>
+Syed Shakil Haider Sabazwari was born on 30 September 1972 in Rawat Radio Colony,
+where he spent his childhood and early adulthood. He completed both his early and
+higher education in Rawat and later earned a Master's degree in Political Science.
+</p>
 
-Life was not easy for him.
+<br>
 
-He lost his beloved mother when he was still a child. After her death, his father remarried. Growing up, he faced many hardships and challenges.
+<p>
+Life presented him with challenges from a very young age. He lost his mother during
+childhood, a loss that deeply affected his life. Soon afterward, his father remarried.
+Growing up, he often faced difficulties and lacked the support that many children receive.
+Financial assistance and guidance were limited, and he had to learn to rely on his own
+determination and strength.
+</p>
 
-His family consisted of three stepbrothers, two stepsisters, four biological sisters and a stepmother.
+<br>
 
-Despite difficult circumstances and limited support, he continued to move forward with courage and determination.
-
-During those years, a few loyal friends became his greatest source of happiness and support.
-
+<p>
+Despite these hardships, he was blessed with a few loyal friends who became a source
+of encouragement and happiness during some of the most difficult periods of his life.
 </p>
 
 </div>
@@ -162,35 +192,38 @@ During those years, a few loyal friends became his greatest source of happiness 
 
 <section>
 
-<h2 class="section-title">The Struggle</h2>
+<h2 class="section-title">The Journey of Struggle</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">
 <h3>Facing Hardship</h3>
 <p>
-He started life with very little support and had to rely on his own strength and determination.
+He began life with very little support and inherited no financial advantages.
 </p>
 </div>
 
 <div class="timeline-item">
-<h3>Never Giving Up</h3>
+<h3>Learning Through Failure</h3>
 <p>
-He tried many professions and business ventures. Some succeeded, many failed, but he never stopped trying.
+Over the years he tried different professions and business ventures. Many attempts
+ended in failure, but each setback became a lesson rather than an excuse to quit.
 </p>
 </div>
 
 <div class="timeline-item">
-<h3>A Courageous Mind</h3>
+<h3>Courage and Determination</h3>
 <p>
-Known for his intelligence and courage, he treated every failure as a lesson and continued moving forward.
+His courage, intelligence, and determination allowed him to keep moving forward when
+others might have stopped.
 </p>
 </div>
 
 <div class="timeline-item">
-<h3>Hard Work Pays Off</h3>
+<h3>Success Through Persistence</h3>
 <p>
-Years of hard work, patience and smart decisions eventually brought him respect, success and financial stability.
+Through hard work, smart decisions, and unwavering dedication, he gradually built a
+respectable career and earned both financial stability and the respect of those around him.
 </p>
 </div>
 
@@ -200,27 +233,30 @@ Years of hard work, patience and smart decisions eventually brought him respect,
 
 <section>
 
-<h2 class="section-title">Marriage & Family</h2>
+<h2 class="section-title">Family and Success</h2>
 
 <div class="card">
 
 <p>
+One of the most important chapters of his life began when he got married. At that time,
+he did not have a stable job, and his wife stood beside him with unwavering support and
+faith in his potential.
+</p>
 
-When he got married, he did not yet have a stable career.
+<br>
 
-His wife stood beside him during difficult times and supported him when life was uncertain.
+<p>
+Together, they faced life's challenges and worked through difficult times. With persistence
+and determination, he eventually achieved success and was able to provide a comfortable
+and fulfilling life for his family.
+</p>
 
-Together they faced challenges with patience and faith.
+<br>
 
-Eventually his dedication and hard work paid off, allowing him to build a successful life and provide comfort, security and opportunities for his family.
-
-Today he is the proud father of five children:
-
-• Three Sons  
-• Two Daughters
-
-His greatest happiness has always been his family.
-
+<p>
+Today, he is a proud husband and the loving father of five children—three sons and two
+daughters. Everything he has done has been driven by his desire to protect, support,
+and provide for his family.
 </p>
 
 </div>
@@ -234,23 +270,24 @@ His greatest happiness has always been his family.
 <div class="card">
 
 <p>
+Syed Shakil Haider Sabazwari is known as a man of knowledge, courage, and determination.
+He carries himself with confidence and positivity, inspiring those around him through both
+his words and actions.
+</p>
 
-Syed Shakil Haider Sabazwari is known as:
+<br>
 
-✔ Intelligent and knowledgeable
+<p>
+He is warm-hearted, caring, and deeply committed to the people he loves. His strong
+personality and passionate nature sometimes show through his temper, but beneath it
+lies a kind heart that always wants the best for his family.
+</p>
 
-✔ Courageous and determined
+<br>
 
-✔ Positive and optimistic
-
-✔ Warm-hearted and caring
-
-✔ Passionate about helping his family
-
-✔ Strong-willed and resilient
-
-His journey inspires everyone around him to remain patient, hardworking and hopeful.
-
+<p>
+His wisdom, experience, and resilience have made him a source of guidance and inspiration
+for those who know him.
 </p>
 
 </div>
@@ -264,13 +301,15 @@ His journey inspires everyone around him to remain patient, hardworking and hope
 <div class="card">
 
 <p>
+Among his many interests, he has a special love for cars. He enjoys learning about them,
+discussing them, and appreciating their design and performance.
+</p>
 
-One of his greatest interests is cars.
+<br>
 
-He enjoys learning about them and appreciates their design and performance.
-
-Above all, he loves spending his time, effort and energy doing whatever he can for the people he loves.
-
+<p>
+Above all, his greatest passion is his family. Much of his effort, time, and energy have
+always been dedicated to creating a better future for the people he loves.
 </p>
 
 </div>
@@ -283,9 +322,9 @@ Above all, he loves spending his time, effort and energy doing whatever he can f
 
 <div class="gallery">
 
-<img src="father1.jpg" alt="Syed Shakil Haider">
+<img src="father1.jpg.png" alt="Syed Shakil Haider Sabazwari">
 
-<img src="father2.jpg" alt="Syed Shakil Haider">
+<img src="father2.jpg.jpg" alt="Syed Shakil Haider Sabazwari">
 
 </div>
 
@@ -293,33 +332,23 @@ Above all, he loves spending his time, effort and energy doing whatever he can f
 
 <section>
 
-<div class="message">
+<h2 class="section-title">A Daughter's Tribute</h2>
 
-<h2>A Daughter's Tribute ❤️</h2>
+<div class="quote">
 
 <p>
-
-Dear Baba,
-
-I love you so much.
-
-You are my hero, my inspiration and the strongest person I know.
-
-Your life teaches me that success belongs to those who never stop trying, no matter how difficult the journey becomes.
-
-Every sacrifice you made and every struggle you faced helped build the life we enjoy today.
-
-Thank you for your love, guidance and dedication.
-
-You are always the best.
-
+"Dear Baba,
 <br><br>
-
-<b>
-With all my love,<br>
-Syeda Hoorulain Haider Sabazwari
-</b>
-
+I love you so much. You have always been my hero, my inspiration, and my source of strength.
+Your journey teaches me that no obstacle is too great for a determined person.
+Every sacrifice you made and every struggle you overcame helped build the life we enjoy today.
+<br><br>
+Thank you for your love, your guidance, and everything you have done for our family.
+You are, and always will be, the best.
+<br><br>
+With all my love,
+<br><br>
+<strong>Syeda Hoorulain Haider Sabazwari</strong>"
 </p>
 
 </div>
@@ -328,7 +357,7 @@ Syeda Hoorulain Haider Sabazwari
 
 <footer>
 
-Made with ❤️ by Your Loving Daughter
+<p>Dedicated with Love to Syed Shakil Haider Sabazwari</p>
 
 </footer>
 
